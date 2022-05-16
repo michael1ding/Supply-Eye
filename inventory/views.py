@@ -45,5 +45,13 @@ def update_item(request, **kwargs):
     }
     return render(request, 'inventory/update.html', context)
 
-def delete_item(request, pk):
+def delete_item(request, **kwargs):
+    pk = kwargs.get('yourUUIDFieldName')
+    item = Item.objects.get(id=pk)
+    
+    if request.method == "POST":
+        item.delete()
+        return redirect('read-inventory')
+
+    context = {"item": item}
     return render(request, 'inventory/delete.html', context)

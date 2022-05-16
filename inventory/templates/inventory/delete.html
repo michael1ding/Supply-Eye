@@ -1,0 +1,22 @@
+{% extends 'shared.html' %}
+
+{% block title %}
+    <title>Delete Item {{ item }}</title>
+{% endblock title %}
+
+{% block content %}
+    <h1 style="text-align: center;">Delete Item {{ item }} in Michael's Store </h1>
+
+    <div class="alert alert-danger" role="alert">
+        Are you sure you want to delete "{{ item }}"?
+    </div>
+
+    <form action="" method="POST" style="display:inline-block"> <!-- same url with post req -->
+        {% csrf_token %}
+        <button class="btn btn-primary">Delete</button>
+    </form>
+    <form action="../../" method="GET" style="display:inline-block"> <!-- same url with post req -->
+        {% csrf_token %}
+        <button class="btn btn-secondary">Cancel</button>
+    </form>
+{% endblock content %}
