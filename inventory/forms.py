@@ -14,17 +14,19 @@ class ItemCreate(ModelForm):
             'Price': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Price'}),
             'Quantity': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Quantity'}),
         }
-"""
+
 class ItemDelete(ModelForm):
     class Meta:
         model = Item
         
-        fields = ('deletion_comments',)
+        fields = ('deleted_comments',)
 
         widgets = {
-            'Name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Name'}),
-            'Description': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Description'}),
-            'Price': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Price'}),
-            'Quantity': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Quantity'}),
+            'Comments': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Comments'}),
         }
-"""
+
+class ItemRevert(ModelForm):
+    class Meta:
+        model = Item
+
+        fields = ()
