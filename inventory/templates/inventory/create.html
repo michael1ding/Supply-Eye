@@ -7,7 +7,7 @@
 {% block content %}
     <h1 style="text-align: center;">Create New Item in Michael's Store </h1>
 
-    <form action="../create_post/" method="POST"> <!-- alert when button pushed -->
+    <form action="../create/" method="POST"> <!-- alert when button pushed -->
         {% csrf_token %}
         {{ form.as_p }} <!--parent django modelform class method -->
         <button class="btn btn-primary">Create</button>
