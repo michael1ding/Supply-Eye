@@ -1,0 +1,41 @@
+{% extends 'shared.html' %}
+
+{% block title %}
+    <title>Item Inventory</title>
+{% endblock title %}
+
+{% block content %}
+    <h1 style="text-align: center;">Michael's Store Item Inventory Information</h1>
+
+    <table class="table table-bordered" style="border: 2px solid">
+        <thead class = "thead-dark">
+            <tr>
+                <th scope="col">_id</th>
+                <th scope="col">name</th>
+                <th scope="col">description</th>
+                <th scope="col">price</th>
+                <th scope="col">quantity</th>
+                <th scope="col">Modify</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in inventory %}
+                <tr>
+                    <th scope="row">{{ item.id }}</th>
+                    <td>{{ item.name }}</tf>
+                    <td>{{ item.description }}</td>
+                    <td>{{ item.price }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>
+                        <a href="{% url 'update-item' item.id %}"><button type="button" class="btn btn-warning">Update</button></a>
+                        <a href="{% url 'delete-item' item.id %}"><button type="button" class="btn btn-danger">Delete</button></a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="text-center">
+        <a href="{% url 'create-item-render' %}"><button type="button" class="btn btn-success">Add New Item</button></a>
+    </div>
+{% endblock content %}
