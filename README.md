@@ -1,6 +1,6 @@
 ## SupplyEye - Inventory Management System
 
-Django web application for the Fall 2022 Shopify Developer Intern Challenge with the following feaetures:
+Developed Django web application for the Fall 2022 Shopify Developer Intern Challenge with the following feaetures:
 
 Requirements:  
 Basic CRUD Functionality. You should be able to:  
