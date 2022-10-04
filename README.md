@@ -8,8 +8,7 @@ I leveraged my background in Django from a previous internship (and also had a r
 
 ### Functionality
 
-I've implemented the following features:
-Basic CRUD Functionality. You should be able to:  
+I've implemented the following features, you should be able to:
 * Create inventory items
 * Edit Them
 * Delete Them
