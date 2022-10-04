@@ -1,6 +1,6 @@
 ## SupplyEye - Inventory Management System
 
-App is hosted on Replit: https://replit.com/@mding8166/Inventory-App-Shopify#
+App is hosted on Replit: https://inventory-app-shopify--mding8166.repl.co/
 
 Developed Django web application for the Fall 2022 Shopify Developer Intern Challenge with the following feaetures:
 
@@ -15,5 +15,3 @@ ONLY ONE OF THE FOLLOWING (We will only evaluate the first feature chosen, so pl
 * **When deleting, allow deletion comments and undeletion**
 * Ability to create warehouses/locations and assign inventory to specific locations
 * Ability to create “shipments” and assign inventory to the shipment, and adjust inventory appropriately
-
-App is hosted on Replit: https://replit.com/@mding8166/Inventory-App-Shopify#
