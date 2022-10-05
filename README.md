@@ -2,7 +2,7 @@
 
 App is hosted on Replit: https://inventory-app-shopify--mding8166.repl.co/
 
- ![Inventories](/invetory.jpg).
+ ![Inventories](/inventory.webp).
 
 ## Background
 
