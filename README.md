@@ -2,6 +2,8 @@
 
 App is hosted on Replit: https://inventory-app-shopify--mding8166.repl.co/
 
+ ![Inventories](/invetory.jpg).
+
 ## Background
 
 I leveraged my background in Django from a previous internship (and also had a refresher for frontend HTML) to build this project. To goal is to distribute this application en masse to help local store owners keep track of their item inventory by implementing multiple backend operations for their store items and using a common datastore like SQLite to keep track of items.
